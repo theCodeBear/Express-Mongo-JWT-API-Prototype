@@ -12,6 +12,6 @@ module.exports = (router) => {
   router.get('/users/:userId', require('./../routes/user/show'));
   router.delete('/users/:userId', require('./../routes/user/destroy'));
   router.post('/users/login',
-              mw.validateCreds,
+              mw.validateLogin,
               require('./../routes/user/login'));
 };
