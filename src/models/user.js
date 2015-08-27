@@ -25,7 +25,7 @@ userSchema.statics.create = (user, cb) => {
 
 // user parameter is email and password
 userSchema.statics.login = (creds, cb) => {
-  User.findOne({email: user.email}, (err, user) => {
+  User.findOne({email: creds.email}, (err, user) => {
     if (err) return cb('Error finding user');
     if (!user) return cb('Your email or password did not match');
     if (bcrypt.compareSync(creds.password, user.password))
