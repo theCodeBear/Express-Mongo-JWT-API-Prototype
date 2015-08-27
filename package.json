@@ -1,0 +1,34 @@
+{
+  "name": "express-mongo-tokenauth-api-prototype",
+  "version": "1.0.0",
+  "description": "A project starter for an API build in Express, MongoDB, and Token Authentication.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "dev": "source .env && nodemon dist/app.js"
+  },
+  "keywords": [
+    "Express",
+    "MongoDB",
+    "JWT",
+    "Authentication"
+  ],
+  "author": "Todd Kronenberg <toddkronenberg@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "jwt-simple": "^0.3.0",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.1.3",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-jshint": "^1.11.2",
+    "jshint-stylish": "^2.0.1"
+  }
+}
